@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美容室</title>
+</head>
+<style>
+    /* General settings */
+body {
+    margin: 0;
+    font-family: "Yu Mincho", serif; /* 美しい日本語フォント */
+    line-height: 1.6;
+    color: #000;
+}
+
+/* Header */
+.header {
+    position: relative;
+    height:75px; /* 画面全体の高さを確保 */
+    background-image: url("images/peu.jpg"); /* 背景画像の設定 */
+    background-size: cover; /* 画面全体をカバー */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しを無効化 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #0099ff; /* 明るい青 */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Top Section */
+.top {
+    position: relative;
+    height: 250px; /* 画面全体の高さを確保 */
+    background-image: url("images/30952336_s.jpg"); /* 背景画像の設定 */
+    background-size: cover; /* 画面全体をカバー */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しを無効化 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.top-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.vertical-message {
+    writing-mode: vertical-rl; /* 縦書き設定 */
+    font-size: 2.5em;
+    font-weight: 6em;
+    font-family: "Yu Mincho", serif; /* 美しいフォント */
+    text-align: right;
+    color: #fff;
+    line-height:2.5;
+}
+
+/* Concept Section */
+.concept {
+    padding: 20px;
+    background-color: #0099ff; /* 明るい青 */
+    color: #000; /* 白文字に調整 */
+    text-align: center;
+}
+
+/* Menu Section */
+.menu {
+    padding: 20px;
+    background-color: #80d4ff; /* 水色 */
+    color: #000;
+}
+
+/* Access Section */
+.access {
+    padding: 20px;
+    background-color: #0099ff; /* 明るい青 */
+    color: #000; /* 白文字に調整 */
+    text-align: center;
+}
+.access2 {
+    position: relative;
+    height: 115px; /* 画面全体の高さを確保 */
+  background-color: #80d4ff; /* 水色 */
+    background-image: url("images/map.jpg"); /* 背景画像の設定 */
+    background-size: cover; /* 画面全体をカバー */
+    background-repeat: no-repeat; /* 繰り返しを無効化 */
+    display: flex;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #80d4ff; /* 水色 */
+    margin-top: 20px;
+}
+
+</style>
+<body>
+    <header class="header">
+        <h1></h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#top">Top</a></li>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#access">Access</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="top" class="top">
+            <div class="top-content">
+                <p class="vertical-message">美しい日々へ<br>ようこそ</p>
+            </div>
+        </section>
+
+        <section id="concept" class="concept">
+            <h2>Concept</h2>
+            <p>こんにちは
+                この度は、気軽に相談できるヘアサロンをめざし、
+                ガレージを改装してヘアサロンを始めました！
+                お客様のご希望をお伺いして施術いたしますので、
+                お気軽にお問い合わせください。
+            </p>
+        </section>
+
+        <section id="menu" class="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li>カット
+                    <ul>
+                        <li>大人: &nbsp ¥3000</li>
+                        <li>高校生:&nbsp ¥2000</li>
+                        <li>小学生:&nbsp ¥1500</li>
+                    </ul>
+                </li>
+                <li>トリートメント: &nbsp¥1500</li>
+                <li>パーマ:&nbsp¥4000</li>
+                <li>ストレートパーマ:&nbsp¥8000</li>
+                <li>ストレートパーマ＋ロング:&nbsp ¥10000</li>
+                <li>ストレートパーマ部分: &nbsp ¥5000</li>
+                <li>カラー:&nbsp¥6000</li>
+                <li>カラー部分:&nbsp  ¥4000</li>
+                <li>ヘナ:   ¥4000</li>
+                <li>主張サロン:&nbsp  ¥700</li>
+            </ul>
+        </section>
+
+        <section id="access" class="access">
+            <h2>Access</h2>
+            <p>石川県小松市西軽海町4丁目41番</p>
+            <p>電話番号: 0761-47-1209</p>
+        </section>
+
+            <section class="access2">
+            </section>
+        </section>
+    </main>
+    </footer>
+    
+</body>
+
+</html>
